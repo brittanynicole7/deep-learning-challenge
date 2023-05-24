@@ -44,19 +44,17 @@
   - What steps did you take in your attempts to increase model performance?
 ### Summary:
 
-# Software and Files
-## Deliverable 1
-- from splinter import Browser
-- from bs4 import BeautifulSoup
-- url = https://static.bc-edx.com/data/web/mars_news/index.html
+## Step 5: Copy Files into your Repository
+- Download your Colab notebooks to your computer.
+- Move them into your Deep Learning Challenge directory in your local repository.
+- Push the added files to GitHub.
 
-## Deliverable 2
-- from splinter import Browser
-- from bs4 import BeautifulSoup as soup
-- import matplotlib.pyplot as plt
+# Software and Files
+- from sklearn.model_selection import train_test_split
+- from sklearn.preprocessing import StandardScaler
 - import pandas as pd
-- import datetime as date
-- url = https://static.bc-edx.com/data/web/mars_facts/temperature.html
+- import tensorflow as tf
+- import pandas as pd 
 
 # Output/Analyses
 
