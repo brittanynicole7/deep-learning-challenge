@@ -59,72 +59,58 @@
 
 # Output/Analyses
 
-## Deliverable 1
-- Imported dependencies
-<img width="622" alt="Screenshot 2023-03-15 at 5 29 02 PM" src="https://user-images.githubusercontent.com/119909433/225457708-c196ee8f-4d92-4e6a-b046-40e2013a9dc3.png">
+## Step 1: Preprocess the Data
+- Created a DataFrame containing the charity_data.csv and identified the target and feature dataset.
+<img width="1439" alt="Screenshot 2023-05-24 at 3 01 38 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/ad89cbcc-cdae-462e-b5eb-12f55112ae0e">
+- Dropped the EIN and NAME columns.
+<img width="1444" alt="Screenshot 2023-05-24 at 3 02 05 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/a6d93eb6-d1e4-44b2-8fbf-bfc20675443d">
+- Determined the number of unique values in each column.
+<img width="1447" alt="Screenshot 2023-05-24 at 3 02 29 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/e76a16d1-d4b0-49eb-8790-13f9ca722951">
+- For columns with more than 10 unique values, determined the number of data points for each unique value. 
+<img width="1436" alt="Screenshot 2023-05-24 at 3 02 52 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/41759676-edd8-44c3-a02e-edef93647073">
+<img width="1441" alt="Screenshot 2023-05-24 at 3 03 40 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/fc2ad64c-88b8-40ce-b835-9cfddb766b50">
+- Created a new value called Other that contains rare categorical variables. 
+<img width="1442" alt="Screenshot 2023-05-24 at 3 03 14 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/490e27a5-6154-4e2d-abdb-dc68162540d5">
+<img width="1442" alt="Screenshot 2023-05-24 at 3 03 55 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/c5ae8f44-f973-4f3e-981e-0cc2eba56d7d">
+- Converted categorical data to numeric.
+<img width="1447" alt="Screenshot 2023-05-24 at 3 04 41 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/cfb256cd-fd31-4f79-b383-648a550e01f9">
+- Created a feature array, X and a target array y by using the preprocessed data.
+<img width="1138" alt="Screenshot 2023-05-24 at 3 05 15 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/8c76b0ba-14b3-459b-9e9a-ddc110133526">
+- Split the preprocessed data into training and testing datasets.
+<img width="1100" alt="Screenshot 2023-05-24 at 3 05 42 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/e93797e4-5456-4017-b7fe-8a8327c0c87b">
+- Scaled the data using a StandardScaler that has been fitted to the training data. 
+<img width="1276" alt="Screenshot 2023-05-24 at 3 06 05 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/cf732903-42c7-4a3e-a58b-41ef16f9d37e">
 
-- Visited the Mars news site, inspected it, and connected to it using an automated browser
-<img width="624" alt="Screenshot 2023-03-15 at 5 29 41 PM" src="https://user-images.githubusercontent.com/119909433/225457794-f5035647-120d-4616-8229-2bb712d6dea4.png">
+## Step 2: Compile, Train, and Evaluate the Model
+- Created a neural network model with a defined number of input features and nodes for each layer.
+<img width="1113" alt="Screenshot 2023-05-24 at 3 11 29 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/dc040aa8-7b26-4eec-86b8-d5f5883397e5"
+- Created hidden layers and an output layer with appropriate activation functions.
+<img width="1111" alt="Screenshot 2023-05-24 at 3 12 35 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/251e152c-ec50-45df-ae87-335568603fd1">
+- Checked the structure of the model.
+<img width="1018" alt="Screenshot 2023-05-24 at 3 12 56 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/2bc47e60-1efc-4ede-8086-3c03d3eba754">
+- Compiled and trained the model.
+- <img width="1172" alt="Screenshot 2023-05-24 at 3 13 11 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/ad5a21c4-c45d-4c24-aaf5-460bdd1873fd">
+- Evaluated the model using the test data to determine loss and accuracy. 
+<img width="1179" alt="Screenshot 2023-05-24 at 3 13 30 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/5633cf2f-6103-42ca-8403-bff07a26da35">
+- Exported the results to an HDF5 file named AlphabetSoupCharity.h5.
+<img width="664" alt="Screenshot 2023-05-24 at 3 13 43 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/99af4b01-59f0-4a0e-aaf6-c1a8222c889a">
 
-- Scraped the website
-<img width="623" alt="Screenshot 2023-03-15 at 5 30 19 PM" src="https://user-images.githubusercontent.com/119909433/225457882-55194e6c-8919-44de-9dc1-374465217b77.png">
-<img width="634" alt="Screenshot 2023-03-15 at 5 30 49 PM" src="https://user-images.githubusercontent.com/119909433/225457962-871ba2a8-96fc-4213-8a8a-c9f940fc4b8f.png">
-<img width="630" alt="Screenshot 2023-03-15 at 5 31 02 PM" src="https://user-images.githubusercontent.com/119909433/225457989-77ca9945-d5c3-4d03-b0d8-8a7835b64706.png">
+## Step 3: Optimize the Model
+- Repeated the preprocessing steps in a new Jupyter notebook. 
+<img width="1177" alt="Screenshot 2023-05-24 at 3 16 07 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/5ec8e56b-5da6-4c92-8acf-ac2154ee0c38">
+- Created a new neural network model, implementing at least 3 model optimization methods.
+  - Optimization Attempt 1: Dropped an additional column (Organization) and created more bins for rare occurrences in columns by changing the threshold for others category <50 for both the application type and classification columns.
+<img width="1358" alt="Screenshot 2023-05-24 at 3 18 46 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/17247f15-e193-4008-855c-10541846b7d3">
+<img width="1375" alt="Screenshot 2023-05-24 at 3 19 02 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/c447bcfa-a6b5-43cf-8cad-cb73d847a42d">
+<img width="1367" alt="Screenshot 2023-05-24 at 3 19 18 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/b343fb72-3b8b-4227-b6a7-cdfc0efa9f08">
+  - Optimization Attempt 2: Added more neurons to hidden layers (the first and second layer by 100 and 60, respectively) and added an additional hidden nodes layer.
+<img width="1353" alt="Screenshot 2023-05-24 at 3 20 39 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/9f9af80c-6c0d-4aa3-9fdf-479d7c9c5d0a">
+  - Optimization Attempt 3: Used the sigmoid acitvation function for all the layers and increased the number of epochs to 200. 
+<img width="1338" alt="Screenshot 2023-05-24 at 3 21 32 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/9c10dc7d-36ad-46a7-bbf0-ecb3bde793f0">
+- Saved and exported the results to an HDF5 file named AlphabetSoupCharity_Optimization.h5.
+<img width="1190" alt="Screenshot 2023-05-24 at 3 21 54 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/877f8046-d846-463c-97e5-e73dc06209d5">
 
-- Stored the results in a dictionary and then printed the list
-<img width="625" alt="Screenshot 2023-03-15 at 5 31 35 PM" src="https://user-images.githubusercontent.com/119909433/225458092-6180dcbf-3ab8-4c9b-a31d-c6acb8cd0fca.png">
-<img width="627" alt="Screenshot 2023-03-15 at 5 31 48 PM" src="https://user-images.githubusercontent.com/119909433/225458121-1430c10b-b924-4630-8cf8-143563183f21.png">
-
-
-## Deliverable 2
-- Imported dependencies
-<img width="628" alt="Screenshot 2023-03-15 at 5 32 27 PM" src="https://user-images.githubusercontent.com/119909433/225458216-a6875d02-9c92-439c-9577-952d21188d27.png">
-
-- Visited the website, connected using an automated browser, and inspected the website 
-<img width="626" alt="Screenshot 2023-03-15 at 5 33 03 PM" src="https://user-images.githubusercontent.com/119909433/225458299-97cad0bc-14af-4b08-a158-1405ddeb87ce.png">
-
-- Scraped the table on the website 
-<img width="631" alt="Screenshot 2023-03-15 at 5 33 30 PM" src="https://user-images.githubusercontent.com/119909433/225458378-c7914648-b6cf-4250-99f0-4eede5114d39.png">
-
-- Stored the data in two lists for the data and headings and printed the lists
-<img width="626" alt="Screenshot 2023-03-15 at 5 34 17 PM" src="https://user-images.githubusercontent.com/119909433/225458489-fa11dc87-ec02-43d9-90fd-653407ea4bda.png">
-
-- Created a DataFrame 
-<img width="620" alt="Screenshot 2023-03-15 at 5 34 45 PM" src="https://user-images.githubusercontent.com/119909433/225458551-d319f017-fdb8-49f6-a23d-0ccd7930bc8d.png">
-
-- Examined the data types, changed the data types, and confirmed that the changes were successful
-<img width="616" alt="Screenshot 2023-03-15 at 5 36 00 PM" src="https://user-images.githubusercontent.com/119909433/225458733-392b2195-ad20-4d8d-892f-9f081f0f3681.png">
-<img width="635" alt="Screenshot 2023-03-15 at 5 36 10 PM" src="https://user-images.githubusercontent.com/119909433/225458760-24865b33-e90f-4cc1-97e8-069aaa938310.png">
-
-- Calculated how many months were on Mars
-<img width="948" alt="Screenshot 2023-03-15 at 8 07 54 PM" src="https://user-images.githubusercontent.com/119909433/225483565-b260bc9c-a0d5-44c9-b697-5b7bf90188e3.png">
-
-- Calculated how many Martian days' worth of data there were 
-<img width="1019" alt="Screenshot 2023-03-15 at 8 08 20 PM" src="https://user-images.githubusercontent.com/119909433/225483623-0ff163ee-d57e-426e-aaca-702917ac5895.png">
-
-- Calculated the average low temperature by month and plotted the values
-<img width="1264" alt="Screenshot 2023-03-15 at 8 08 48 PM" src="https://user-images.githubusercontent.com/119909433/225483679-95754105-12c8-43e3-b9c5-93d13048a0ff.png">
-<img width="974" alt="Screenshot 2023-03-15 at 8 09 00 PM" src="https://user-images.githubusercontent.com/119909433/225483702-5a03449e-4074-4fdb-9636-069f37568bb5.png">
-
-- Calculated the lowest and highest months 
-<img width="853" alt="Screenshot 2023-03-15 at 8 09 25 PM" src="https://user-images.githubusercontent.com/119909433/225483742-36502feb-eb34-4a5b-8537-801177110975.png">
-<img width="1148" alt="Screenshot 2023-03-15 at 8 09 38 PM" src="https://user-images.githubusercontent.com/119909433/225483756-6f4092f3-2d06-4446-886a-9a9c18b42628.png">
-
-- Calculated the average pressure by month and plotted the values
-<img width="1056" alt="Screenshot 2023-03-15 at 8 10 06 PM" src="https://user-images.githubusercontent.com/119909433/225483813-8d36c3f5-0ab2-4c31-8f44-350052783a03.png">
-<img width="945" alt="Screenshot 2023-03-15 at 8 10 17 PM" src="https://user-images.githubusercontent.com/119909433/225483834-8a16684f-ead4-48fd-b1ca-f7f354557ce7.png">
-
-- Calculated which months had the highest and lowest average pressure
-<img width="719" alt="Screenshot 2023-03-15 at 8 10 41 PM" src="https://user-images.githubusercontent.com/119909433/225483889-02a15044-5090-4089-b0f2-7550a8bbd82b.png">
-<img width="1039" alt="Screenshot 2023-03-15 at 8 10 52 PM" src="https://user-images.githubusercontent.com/119909433/225483913-54664e0b-f7cd-4f91-8cdd-f4814d7de9a9.png">
-
-- Did a rough calculation based on a plot of how many earth days there are in a Martian year
-<img width="1365" alt="Screenshot 2023-03-15 at 8 11 38 PM" src="https://user-images.githubusercontent.com/119909433/225484007-c92aec4a-4a1b-4267-a13e-652eea1af3bb.png">
-
-- Created a CSV file of the DataFrame
-<img width="852" alt="Screenshot 2023-03-15 at 8 12 02 PM" src="https://user-images.githubusercontent.com/119909433/225484064-d631c504-21c1-4e5a-9d14-faf6d47d094c.png">
-<img width="692" alt="Screenshot 2023-03-15 at 8 12 47 PM" src="https://user-images.githubusercontent.com/119909433/225484156-63b8badf-2839-451c-a1a3-861f61b44f2d.png">
-
+## Step 4: Address questions regarding the purpose of the analysis, the results, and an overall summary of the process (see above). 
 
 # Author 
 -Brittany Wright github:brittanynicole7
