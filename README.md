@@ -30,6 +30,20 @@
 - Design a neural network model and adjust for modifications that will optimize the model to achieve higher than 75% accuracy. 
 - Save and export your results to an HDF5 file named AlphabetSoupCharity_Optimization.h5.
 
+## Step 4: Write a Report on the Neural Network Model
+
+### Overview of the analysis:
+### Results:
+- Data Preprocessing
+  - What variable(s) are the target(s) for your model?
+  - What variable(s) are the features for your model?
+  - What variable(s) should be removed from the input data because they are neither targets nor features?
+- Compiling, Training, and Evaluating the Model
+  - How many neurons, layers, and activation functions did you select for your neural network model, and why?
+  - Were you able to achieve the target model performance?
+  - What steps did you take in your attempts to increase model performance?
+### Summary:
+
 # Software and Files
 ## Deliverable 1
 - from splinter import Browser
