@@ -110,7 +110,7 @@
 - Saved and exported the results to an HDF5 file named AlphabetSoupCharity_Optimization.h5.
 <img width="1190" alt="Screenshot 2023-05-24 at 3 21 54 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/877f8046-d846-463c-97e5-e73dc06209d5">
 
-## Step 4: Address questions regarding the purpose of the analysis, the results, and an overall summary of the process (see above). 
+## Step 4: Addressed questions regarding the purpose of the analysis, the results, and an overall summary of the process (see above). 
 
 # Author 
 -Brittany Wright github:brittanynicole7
