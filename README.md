@@ -108,8 +108,8 @@ The purpose of this analysis is to use deep learning techniques to predict if ap
 <img width="1018" alt="Screenshot 2023-05-24 at 3 12 56 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/2bc47e60-1efc-4ede-8086-3c03d3eba754">
 
 - Compiled and trained the model.
-- <img width="1172" alt="Screenshot 2023-05-24 at 3 13 11 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/ad5a21c4-c45d-4c24-aaf5-460bdd1873fd">
-- 
+<img width="1172" alt="Screenshot 2023-05-24 at 3 13 11 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/ad5a21c4-c45d-4c24-aaf5-460bdd1873fd">
+
 - Evaluated the model using the test data to determine loss and accuracy. 
 <img width="1179" alt="Screenshot 2023-05-24 at 3 13 30 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/5633cf2f-6103-42ca-8403-bff07a26da35">
 
@@ -131,6 +131,7 @@ The purpose of this analysis is to use deep learning techniques to predict if ap
 
 - Optimization Attempt 3: Used the sigmoid acitvation function for all the layers and increased the number of epochs to 200. 
 <img width="1338" alt="Screenshot 2023-05-24 at 3 21 32 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/9c10dc7d-36ad-46a7-bbf0-ecb3bde793f0">
+
 - Saved and exported the results to an HDF5 file named AlphabetSoupCharity_Optimization.h5.
 <img width="1190" alt="Screenshot 2023-05-24 at 3 21 54 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/877f8046-d846-463c-97e5-e73dc06209d5">
 
