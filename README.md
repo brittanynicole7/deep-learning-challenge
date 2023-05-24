@@ -99,13 +99,13 @@
 - Repeated the preprocessing steps in a new Jupyter notebook. 
 <img width="1177" alt="Screenshot 2023-05-24 at 3 16 07 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/5ec8e56b-5da6-4c92-8acf-ac2154ee0c38">
 - Created a new neural network model, implementing at least 3 model optimization methods.
-  - Optimization Attempt 1: Dropped an additional column (Organization) and created more bins for rare occurrences in columns by changing the threshold for others category <50 for both the application type and classification columns.
+- Optimization Attempt 1: Dropped an additional column (Organization) and created more bins for rare occurrences in columns by changing the threshold for others category <50 for both the application type and classification columns.
 <img width="1358" alt="Screenshot 2023-05-24 at 3 18 46 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/17247f15-e193-4008-855c-10541846b7d3">
 <img width="1375" alt="Screenshot 2023-05-24 at 3 19 02 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/c447bcfa-a6b5-43cf-8cad-cb73d847a42d">
 <img width="1367" alt="Screenshot 2023-05-24 at 3 19 18 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/b343fb72-3b8b-4227-b6a7-cdfc0efa9f08">
-  - Optimization Attempt 2: Added more neurons to hidden layers (the first and second layer by 100 and 60, respectively) and added an additional hidden nodes layer.
+- Optimization Attempt 2: Added more neurons to hidden layers (the first and second layer by 100 and 60, respectively) and added an additional hidden nodes layer.
 <img width="1353" alt="Screenshot 2023-05-24 at 3 20 39 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/9f9af80c-6c0d-4aa3-9fdf-479d7c9c5d0a">
-  - Optimization Attempt 3: Used the sigmoid acitvation function for all the layers and increased the number of epochs to 200. 
+- Optimization Attempt 3: Used the sigmoid acitvation function for all the layers and increased the number of epochs to 200. 
 <img width="1338" alt="Screenshot 2023-05-24 at 3 21 32 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/9c10dc7d-36ad-46a7-bbf0-ecb3bde793f0">
 - Saved and exported the results to an HDF5 file named AlphabetSoupCharity_Optimization.h5.
 <img width="1190" alt="Screenshot 2023-05-24 at 3 21 54 PM" src="https://github.com/brittanynicole7/deep-learning-challenge/assets/119909433/877f8046-d846-463c-97e5-e73dc06209d5">
