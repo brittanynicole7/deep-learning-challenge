@@ -55,6 +55,7 @@
 - import pandas as pd
 - import tensorflow as tf
 - import pandas as pd 
+- CSV: https://static.bc-edx.com/data/dl-1-2/m21/lms/starter/charity_data.csv
 
 # Output/Analyses
 
