@@ -32,16 +32,24 @@
 
 ## Step 4: Write a Report on the Neural Network Model
 
-### Overview of the analysis:
+### Overview of the analysis: 
+The purpose of this analysis is to use deep learning techniques to predict if applicants for the nonprofit foundation Alphabet Soup would be successful or not.
+
 ### Results:
 - Data Preprocessing
   - What variable(s) are the target(s) for your model?
+  - The target variable for this model is the "IS_SUCCESSFUL" variable.
   - What variable(s) are the features for your model?
+  - The features for this model are the "ORGANIZATION", "ASK_AMT", "SPECIAL_CONSIDERATIONS", "INCOME_AMT", "STATUS", "USE_CASE", "CLASSIFICATION", "AFFILIATION", and "APPLICATION_TYPE" variables. 
   - What variable(s) should be removed from the input data because they are neither targets nor features?
+  - The variables that should be removed are the "EIN" and "NAME" variables. 
 - Compiling, Training, and Evaluating the Model
   - How many neurons, layers, and activation functions did you select for your neural network model, and why?
+  - For the original model, I used two hidden layers with one output layer, 80 nodes in the first layer and 30 in the second, and relu for the hidden layer activation functions and sigmoid for the output layer. ***
   - Were you able to achieve the target model performance?
-  - What steps did you take in your attempts to increase model performance?
+  - I was not able to achieve the target model performance for this initial model (72.5% accuracy). With the three other optimization attempts, I was still not able to achieve the target model performance (). 
+  - What steps did you take in your attempts to increase model performance? 
+  - For the first optimization attempt, I dropped the organization column and changed the threshold for the others category to greater than 50 for application type and classification. For the second optimization attempt, I added more neurons (100 and 60) to the two hidden layers and added an additional hidden layer with 20 neurons. For the last attempt, I changed the activation function to sigmoid for all the layers and increased the epochs to 200. 
 ### Summary:
 
 ## Step 5: Copy Files into your Repository
