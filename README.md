@@ -3,7 +3,7 @@
 # Project Description 
 
 ## Step 1: Preprocess the Data
-- Read in the charity_data.csb to a Pandas DataFrame and identify the targets and features for the model. 
+- Read in the charity_data.csv to a Pandas DataFrame and identify the targets and features for the model. 
 - Drop the EIN and NAME columns.
 - Determine the number of unique values for each column. 
 - For columns that have more than 10 unique values, determine the number of data points for each unique value.
@@ -23,7 +23,7 @@
 - Save and export your results to an HDF5 file named AlphabetSoupCharity.h5
 
 ## Step 3: Optimize the Model
-- Optimize the model to achieve a target predictive accuracy higher than 75% by dropping more or fewer columns, creating more bins for rare occurrences in columns, increasing or decreasing the number of values for each bin, add more neurons to a hidden layer, add more hidden layers, use different activation functions for the hidden layers, or add or reduce the number of epochs to the training regimen. 
+- Optimize the model to achieve a target predictive accuracy higher than 75% by dropping more or fewer columns, creating more bins for rare occurrences in columns, increasing or decreasing the number of values for each bin, adding more neurons to a hidden layer, adding more hidden layers, using different activation functions for the hidden layers, or adding or reducing the number of epochs to the training regimen. 
 - Create a Google Colab file and name it AlphabetSoupCharity_Optimization.ipynb
 - Import dependencies and read in the charity_date.csv to a DataFrame. 
 - Preprocess the dataset and adjust for any modifications that came out of optimizing the model.
@@ -33,7 +33,7 @@
 ## Step 4: Write a Report on the Neural Network Model
 
 ### Overview of the analysis: 
-The purpose of this analysis is to use deep learning techniques to predict if applicants for the nonprofit foundation Alphabet Soup would be successful or not.
+The purpose of this analysis is to use deep learning techniques to predict if applicants for the nonprofit foundation Alphabet Soup will be successful or not. The goal was to hit a 75% accuracy target and to make three attempts at optimizing the model. 
 
 ### Results:
 - Data Preprocessing
@@ -45,12 +45,14 @@ The purpose of this analysis is to use deep learning techniques to predict if ap
   - The variables that should be removed are the "EIN" and "NAME" variables. 
 - Compiling, Training, and Evaluating the Model
   - How many neurons, layers, and activation functions did you select for your neural network model, and why?
-  - For the original model, I used two hidden layers with one output layer, 80 nodes in the first layer and 30 in the second, and relu for the hidden layer activation functions and sigmoid for the output layer. ***
+  - For the original model, I used two hidden layers with one output layer, 80 nodes in the first layer and 30 in the second, and relu for the hidden layer activation functions and sigmoid for the output layer. I began by using the Relu activation function because of it's ability to learn faster compared to other functions. I chose two hidden layers initially to add more robustness to the model and to create a deep neural network. I wanted to have multiple layers with many neurons to optimize the model. When I did not receive the desired results, I added an additional hidden layer, changed the activation functions, and added more neurons (see below).
   - Were you able to achieve the target model performance?
-  - I was not able to achieve the target model performance for this initial model (72.5% accuracy). With the three other optimization attempts, I was still not able to achieve the target model performance (). 
+  - I was not able to achieve the target model performance for this initial model (72.5% accuracy). With the three other optimization attempts, I was still not able to achieve the target model performance. 
   - What steps did you take in your attempts to increase model performance? 
   - For the first optimization attempt, I dropped the organization column and changed the threshold for the others category to greater than 50 for application type and classification. For the second optimization attempt, I added more neurons (100 and 60) to the two hidden layers and added an additional hidden layer with 20 neurons. For the last attempt, I changed the activation function to sigmoid for all the layers and increased the epochs to 200. 
+
 ### Summary:
+Ultimately, despite three different attempts at optimization, the model did not perform as expected and did not achieve an accuracy score of 75% or greater. If we were going to continue using a deep learning model to achieve a higher accuracy score, I would probably try to add more neurons to each of the three hidden layers, potentially add one more hidden layer, and increase the number of epochs to 300. The recommendation is at least 2-4 hidden layers so adding one more layer may help the model. After increasing the neurons, layers, and epochs I could also try to switch back to relu to see if changing the activation function has any effect or potentially have a more complex activation function (sigmoid) in the hidden layers and a simpler function (relu) in the output layer. If I were to chose a completely different model to try to predict whether applicants would be successful, I would likely try to use a logistic regression because the outcome variable is categorical (is successful versus not). Similar to other logistic regression models, I would preprocess the data by separating the y variable (is_successful) from the X variable (the features) and split the data into training and testing datasets using train_test_split. I would then fit the model using the training data, make predictions using the test data, and look at the accuracry score, the confusion matrix, and the classification report.
 
 ## Step 5: Copy Files into your Repository
 - Download your Colab notebooks to your computer.
